@@ -1,0 +1,21 @@
+class myassignent(object):
+
+  def __init__(self, name, age, emailId):
+    self.name = name
+    self.age = age
+    self.emailId = emailId
+
+
+  def write_intro(self):
+    print(f'My name is {self.name}', f'and my age is {self.age}')
+
+
+  def manipulate_id(self):
+    splittedup = self.emailId.split('@')
+    print(f'the id is divided into 2 parts, the username is {splittedup[0]}', f'and the domain name is {splittedup[1]}')
+
+new_instance = myassignent('karan', 28, 'mehra9090@gmail.com')
+
+if __name__ == '__main__':
+  new_instance.write_intro()
+  new_instance.manipulate_id()
